@@ -1,0 +1,159 @@
+@import 'reset';
+
+@import 'variable';
+@import 'layout';
+@import 'base';
+@import 'main';
+
+/* 可以先將所有物件加上邊框，來判斷範圍
+    border會佔據距離，outline不會
+
+*,*:before,*:after{
+	outline: 1px solid red;
+}
+*/
+
+//header 區域
+.header-area {
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    &-member {
+        a {
+            padding: 12px;
+
+            i {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+.header-nav-link {
+    a {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+//麵包屑區域
+.main-breadcrumb {
+    margin-top: 32px;
+    margin-bottom: 24px;
+
+    a:first-child {
+        color: $neutral600;
+    }
+
+    span {
+        color: $neutral300;
+        font-weight: $font-weight-bold;
+        letter-spacing: 0;
+        line-height: 1.5;
+    }
+
+}
+
+// 商品導覽和商品卡片區域
+.main-product {
+    margin-top: 24px;
+    margin-bottom: 32px;
+
+    &-category {
+        padding-right: 24px;
+
+        a {
+            padding: 12px 0;
+        }
+    }
+
+    //商品卡片區域
+    //TODO:可能有更好的做法
+    &-section {
+        &-list {
+            ul {
+                row-gap: 48px; // 確保每三張卡片（換行後）下面間距是 48px
+                column-gap: 24px; // 左右卡片的間距
+            }
+            li {
+                width: calc((100% - 48px) / 3);
+            }
+        }
+        //頁碼區域
+    &-page {
+        a {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+        //頁碼區域
+        &-page {
+            a {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+
+//頁碼icon
+.bi-chevron-left {
+    color: rgba($neutral900, 0.4);
+    font-size: 20px;
+    line-height: 1;
+    padding: 10px;
+}
+
+.bi-chevron-right {
+    font-size: 20px;
+    line-height: 1;
+    padding: 10px;
+}
+
+
+//coupon區域
+section {
+    background-color: $primary200;
+}
+
+.coupon {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-top: 48px;
+
+    button {
+        color: $neutral0;
+        background-color: $neutral900;
+        padding: 12px 24px;
+    }
+}
+
+//footer區域
+footer {
+    background-color: $neutral100;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.footer {
+    &-nav {
+        &-link {
+            a {
+                padding-top: 12px;
+                padding-bottom: 12px;
+            }
+        }
+    }
+    &-copyright {
+        color: $neutral600;
+        padding-top: 32px;
+        text-align: center;
+    }
+}

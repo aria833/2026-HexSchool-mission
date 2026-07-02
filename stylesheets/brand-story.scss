@@ -1,0 +1,99 @@
+@import 'reset';
+
+@import 'variable';
+@import 'layout';
+@import 'base';
+@import 'main';
+
+/* 可以先將所有物件加上邊框，來判斷範圍
+    border會佔據距離，outline不會
+
+*,*:before,*:after{
+	outline: 1px solid red;
+}
+*/
+
+//header區域
+header {
+    background-image: url(../img/hero.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    &-title {
+        color: $neutral0;
+        padding-top: 151px;
+        padding-bottom: 151px;
+        text-align: center;
+    }
+}
+
+.headings-h5 {
+    color: $primary400;
+}
+
+
+//slogan區域
+.slogan {
+    text-align: center;
+    padding: 32px;
+    background-color: $primary100;
+}
+
+//多區域共用
+.bottom-line {
+    border-bottom: 1px solid $neutral300;
+}
+
+.margin-right8 {
+    margin-right: 8px;
+}
+
+//品牌歷程區域
+.history-event {
+    ol {
+        list-style-type: disc;
+
+        //讓符號在容器裡面
+        list-style-position: inside;
+    }
+}
+
+//品牌理念區域
+.concept-list-border {
+    border-left: 3px solid $neutral300;
+    text-indent: 12px;
+}
+
+//品牌小故事區域
+.story-content {
+    color: $primary400;
+
+    &-link {
+        border-bottom: 1px solid $primary400;
+        margin-left: 4px;
+    }
+
+    ul {
+        li {
+            a {
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+        }
+    }
+}
+
+//footer區域
+footer {
+    background-color: $neutral100;
+    color: $neutral600;
+    text-align: center;
+
+    .footer-copyright {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+}
+

@@ -1,0 +1,16 @@
+// 文字全域
+body {
+    letter-spacing: 0.05em;
+    font-family: $font-family-primary;
+    color: $neutral900;
+    margin: 0 auto;
+}
+
+/* 避免畫面縮小時貼其邊界，左右保留12px留白，並將最大寬度設為1296+24= 1320*/
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0px 12px;
+    width: 100%;
+}
+
