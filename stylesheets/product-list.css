@@ -385,6 +385,10 @@ body {
   line-height: 1.5;
 }
 
+.select-color {
+  color: #57A203;
+}
+
 .main-product {
   margin-top: 24px;
   margin-bottom: 32px;
