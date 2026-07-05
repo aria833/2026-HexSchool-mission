@@ -362,6 +362,10 @@ button {
   margin: 0 auto;
 }
 
+.d-none {
+  display: none;
+}
+
 @media (max-width: 543px) {
   .label-mb-sm {
     font-size: 0.875rem;
@@ -397,6 +401,9 @@ button {
     font-size: 0.875rem;
     line-height: 1.5;
     font-weight: 400;
+  }
+  .spacing-mb-0 {
+    gap: 0px;
   }
   .spacing-mb-xxs {
     gap: 4px;
@@ -472,11 +479,11 @@ body {
 
 /* 可以先將所有物件加上邊框，來判斷範圍
     border會佔據距離，outline不會
-
-*,*:before,*:after{
-	outline: 1px solid red;
-}
 */
+*, *:before, *:after {
+  outline: 1px solid red;
+}
+
 .header-area {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -539,14 +546,14 @@ body {
 .main-product-section-list li {
   width: calc((100% - 48px) / 3);
 }
-@media (max-width: 375px) {
+@media (max-width: 543px) {
   .main-product-section-list ul {
     row-gap: 24px;
     -moz-column-gap: 12px;
          column-gap: 12px;
   }
   .main-product-section-list li {
-    width: calc((100% - 24px) / 2);
+    width: calc((100% - 12px) / 2);
   }
 }
 .main-product-section-page a {

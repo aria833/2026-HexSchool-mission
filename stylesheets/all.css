@@ -362,6 +362,10 @@ button {
   margin: 0 auto;
 }
 
+.d-none {
+  display: none;
+}
+
 @media (max-width: 543px) {
   .label-mb-sm {
     font-size: 0.875rem;
@@ -397,6 +401,9 @@ button {
     font-size: 0.875rem;
     line-height: 1.5;
     font-weight: 400;
+  }
+  .spacing-mb-0 {
+    gap: 0px;
   }
   .spacing-mb-xxs {
     gap: 4px;
