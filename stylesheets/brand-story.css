@@ -676,4 +676,11 @@ footer {
 }
 .story-content ul li a {
   padding: 8px 0;
+}
+
+.story-content a:hover {
+  color: #477A11;
+}
+.story-content a:active {
+  color: #57A203;
 }/*# sourceMappingURL=brand-story.css.map */

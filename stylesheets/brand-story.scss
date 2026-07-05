@@ -105,3 +105,12 @@
         }
     }
 }
+
+.story-content {
+    a:hover {
+        color: $primary500;
+    }
+    a:active {
+        color: $primary400;
+    }
+}
