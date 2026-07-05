@@ -19,7 +19,13 @@ body {
 .main-product-section-list-card,
 .recommend-card,
 .hover-selected,
-.main-items-card {
+.main-items-card,
+.main-content-card,
+.hot-content-list,
+.series-card-item1,
+.series-card-item2,
+.series-card-item3,
+.series-card-item4 {
     border-radius: 8px;
     position: relative;
     overflow: hidden; //超出卡片範圍的內容全部裁切掉

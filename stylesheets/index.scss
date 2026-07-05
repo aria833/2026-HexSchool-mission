@@ -60,6 +60,15 @@
     padding: 12px 24px;
 }
 
+.button-buy:hover {
+    background-color: $primary400;
+    color: $neutral0;
+}
+
+.button-buy:active {
+    background-color: $primary500;
+    color: $neutral0;
+}
 
 //main區域 
 main {

@@ -76,7 +76,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  vertical-align: middle;
 }
 
 button {
@@ -359,6 +358,10 @@ button {
   align-items: center;
 }
 
+.align-start {
+  align-items: start;
+}
+
 /* 把右邊多餘的空間往左排 */
 .ml-auto {
   margin-left: auto;
@@ -514,7 +517,13 @@ body {
 .main-product-section-list-card,
 .recommend-card,
 .hover-selected,
-.main-items-card {
+.main-items-card,
+.main-content-card,
+.hot-content-list,
+.series-card-item1,
+.series-card-item2,
+.series-card-item3,
+.series-card-item4 {
   border-radius: 8px;
   position: relative;
   overflow: hidden;
@@ -522,7 +531,13 @@ body {
 .main-product-section-list-card::after,
 .recommend-card::after,
 .hover-selected::after,
-.main-items-card::after {
+.main-items-card::after,
+.main-content-card::after,
+.hot-content-list::after,
+.series-card-item1::after,
+.series-card-item2::after,
+.series-card-item3::after,
+.series-card-item4::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -534,7 +549,13 @@ body {
 .main-product-section-list-card:hover::after,
 .recommend-card:hover::after,
 .hover-selected:hover::after,
-.main-items-card:hover::after {
+.main-items-card:hover::after,
+.main-content-card:hover::after,
+.hot-content-list:hover::after,
+.series-card-item1:hover::after,
+.series-card-item2:hover::after,
+.series-card-item3:hover::after,
+.series-card-item4:hover::after {
   opacity: 1;
 }
 
