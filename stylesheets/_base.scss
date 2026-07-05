@@ -438,15 +438,23 @@ button {
     }
 
     /* 在md以下，原本隱藏的要打開 */
-    .d-md-block{
+    .d-mb-block{
         display: block;
     }
     /* 在md以下，原本打開的要隱藏 */
-    .d-md-none {
+    .d-mb-none {
         display: none;
     }
-    .d-md-column {
+    .d-mb-column {
         flex-direction: column;
+    }
+
+    .d-mb-flex {
+        display: flex;
+    }
+
+    .flex-mb-nowrap {
+        flex-wrap: nowrap;
     }
 
     .align-mb-start {
@@ -468,7 +476,7 @@ button {
 
 
 
-    .col-md-12 {
+    .col-mb-12 {
     --span: 12;
     --gap-count: calc(var(--span) - 1);
     width: calc(

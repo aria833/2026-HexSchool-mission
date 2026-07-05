@@ -7,11 +7,11 @@
 
 /* 可以先將所有物件加上邊框，來判斷範圍
     border會佔據距離，outline不會
-*/
+
 *,*:before,*:after{
 	outline: 1px solid red;
 }
-
+*/
 
 //header 區域
 .header-area {
@@ -95,7 +95,7 @@
                 width: calc((100% - 48px) / 3);
             }
 
-             @media (max-width: 543px) {
+             @media (max-width: 576px) {
                 ul {
                     row-gap: 24px; // 確保換行後的間距
                     column-gap: 12px; // 左右卡片的間距
@@ -166,7 +166,7 @@
         padding: 24px 0;
         margin-top: 48px;
 
-        @media (max-width: 543px) {
+        @media (max-width: 576px) {
             margin-top: 24px;
         }
 
@@ -175,7 +175,7 @@
             background-color: $neutral900;
             padding: 12px 24px;
 
-            @media (max-width: 543px) {
+            @media (max-width: 576px) {
                 padding: 8px 16px;
             }
         }
@@ -187,7 +187,7 @@ footer {
     background-color: $neutral100;
     padding: 64px 0;
 
-    @media (max-width:543px) {
+    @media (max-width: 576px) {
         padding: 32px 0;
     }
 }

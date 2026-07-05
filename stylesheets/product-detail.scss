@@ -43,6 +43,9 @@
 
 main {
     padding: 64px 0;
+    @media (max-width: 576px) {
+        padding: 0;
+    }
 }
 
 
@@ -54,6 +57,12 @@ main {
     }
     li {
         width: calc((100% - 8px) / 2);
+    }
+
+    @media (max-width: 576px) {
+        li {
+            width: 100%;
+        }
     }
 }
 
@@ -111,6 +120,10 @@ main {
             align-items: center;
             padding: 14px 0px;
             border: 1px solid $neutral900;
+            
+            @media (max-width: 576px) {
+                width: 100%;
+            }
         }
         .button-dark {
             background-color: $neutral900;
@@ -129,6 +142,12 @@ main {
     }
 }
 
+.heart-icon {
+    color: $neutral900;
+    font-size: 24px;
+    padding: 12px;
+}
+
 .sale-color {
     color: $danger300;
 }
@@ -140,11 +159,31 @@ main {
 //你可能也喜歡區域
 .recommend-section {
     padding: 48px 0;
-}
+    @media (max-width: 576px) {
+        padding: 40px 0;
+    }
 
+}
 .recommend-card {
     max-width: 306px;
 }
+
+@media (max-width: 576px) {
+    .recommend {
+        ul {
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: stretch;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;   /* 讓手機滑動時有滑順的滑鼠/手指跟隨感 */
+            scrollbar-width: none; /* 隱藏原生的滾動條*/
+        }
+        &-card {
+            min-width: 300px;
+        }
+    }
+}
+
 
 //coupon區域
 .coupon {
@@ -154,7 +193,7 @@ main {
         padding: 24px 0;
         margin-top: 48px;
 
-        @media (max-width: 543px) {
+        @media (max-width: 576px) {
             margin-top: 24px;
         }
 
@@ -163,7 +202,7 @@ main {
             background-color: $neutral900;
             padding: 12px 24px;
 
-            @media (max-width: 543px) {
+            @media (max-width: 576px) {
                 padding: 8px 16px;
             }
         }
@@ -175,7 +214,7 @@ footer {
     background-color: $neutral100;
     padding: 64px 0;
 
-    @media (max-width:543px) {
+    @media (max-width:576px) {
         padding: 32px 0;
     }
 }

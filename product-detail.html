@@ -18,7 +18,7 @@
             <div class="header-area d-flex jcsb">
                 <div class="header-area-nav d-flex spacing-3xl align-center">
                     <a href="index.html"><img src="./img/logo.svg" alt="logo link"></a>
-                    <div class="header-nav-link label-md d-md-none">
+                    <div class="header-nav-link label-md d-mb-none">
                         <ul class="d-flex spacing-2xl">
                             <li><a href="product-list.html">商品列表</a></li>
                             <li><a href="brand-story.html">品牌故事</a></li>
@@ -31,13 +31,13 @@
             </div>
         </div>
     </header>
-    
+
     <main>
         <div class="container">
-            <div class="main d-flex spacing-l">
-                <div class="layout col-5">
+            <div class="main d-flex d-mb-column spacing-l">
+                <div class="layout col-5 col-mb-12">
                     <div class="main-img">
-                        <ul class="d-flex flex-wrap">
+                        <ul class="d-flex flex-wrap d-mb-none">
                             <li><img src="./img/product-detail/image.png" alt="shoe photo"></li>
                             <li><img src="./img/product-detail/image-1.png" alt="shoe photo"></li>
                             <li><img src="./img/product-detail/image-2.png" alt="shoe photo"></li>
@@ -47,25 +47,28 @@
                             <li><img src="./img/product-detail/image-6.png" alt="shoe photo"></li>
                             <li><img src="./img/product-detail/image-7.png" alt="shoe photo"></li>
                         </ul>
+                        <ul>
+                            <li><img src="./img/product-detail/image.png" alt="shoe photo" class="d-none d-mb-block"></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="layou col-7">
+                <div class="layou col-7 col-mb-12">
                     <div class="main-detail">
                         <div class="main-detail-introduction">
-                            <div class="main-detail-introduction-title margin-bottom-m">
+                            <div class="main-detail-introduction-title margin-bottom-m margin-bottom-mb-s">
                                 <div class="main-detail-introduction-title-breadcrumb d-flex spacing-s align-center margin-bottom-s">
-                                    <a href="index.html" class="label-md">首頁</a>
+                                    <a href="index.html" class="label-md label-mb-sm">首頁</a>
                                     <p>/</p>
-                                    <a href="#" class="label-md">女鞋</a>
+                                    <a href="#" class="label-md label-mb-sm">女鞋</a>
                                     <p>/</p>
-                                    <a href="#" class="label-md">滑板鞋</a>
+                                    <a href="#" class="label-md label-mb-sm">滑板鞋</a>
                                     <p>/</p>
-                                    <a href="#" class="label-md">Platform 404</a>
+                                    <a href="#" class="label-md label-mb-sm">Platform 404</a>
                                 </div>
-                                <h2 class="headings-h2">Platform 404</h2>
+                                <h2 class="headings-h2 headings-mb-h4">Platform 404</h2>
                             </div>
                             <div class="main-detail-introduction-price d-flex align-center spacing-xs margin-bottom-s">
-                                <h5 class="headings-h5">NT$2,600</h5>
+                                <h5 class="headings-h5 headings-mb-h6">NT$2,600</h5>
                                 <p class="paragraph-sm">NT$3,200</p>
                             </div>
                             <div class="main-detail-introduction-content margin-bottom-xl paragraph-md">
@@ -108,7 +111,7 @@
                                     <p class="paragraph-sm sale-color">僅剩 3 雙</p>
                                 </div>
                             </div>
-                            <div class="main-detail-specification-action d-flex margin-bottom-xl spacing-xs">
+                            <div class="main-detail-specification-action d-flex margin-bottom-xl spacing-xs d-mb-none">
                                 <button type="button" class="d-flex align-center spacing-xs radius-xs">
                                     <i class="bi bi-heart"></i>
                                     <p class="label-md">加入收藏</p>
@@ -117,6 +120,13 @@
                                     <i class="bi bi-handbag"></i>
                                     <p class="label-md">門市預約試穿</p>
                                 </button>
+                            </div>
+                            <div class="main-detail-specification-action d-flex jcsb margin-bottom-xl spacing-xs d-none d-mb-flex">
+                                <button type="button" class="d-flex align-center spacing-xs radius-xs button-dark">
+                                    <i class="bi bi-handbag"></i>
+                                    <p class="label-md">門市預約試穿</p>
+                                </button>
+                                <i class="bi bi-heart heart-icon"></i>
                             </div>
                         </div>
                         <div class="main-detail-additional">
@@ -149,31 +159,31 @@
     </main>
     <div class="recommend-section">
         <div class="container">
-            <h4 class="headings-h4 margin-bottom-s">你可能也喜歡...</h4>
+            <h4 class="headings-h4 margin-bottom-s headings-mb-h5">你可能也喜歡...</h4>
             <div class="recommend">
                 <ul class="d-flex flex-wrap spacing-l">
-                    <li><a href="#" class="recommend-card">
+                    <li class="recommend-card"><a href="#">
                         <img src="./img/product-list/product-2.png" alt="shoe photo" class="margin-bottom-s">
                         <div class="recommend-card-content">
                             <h6 class="headings-h6 margin-bottom-xxs">VM001</h6>
                             <p class="label-md">NT$2,600</p>
                         </div>
                     </a></li>
-                    <li><a href="#" class="recommend-card">
+                    <li class="recommend-card"><a href="#">
                         <img src="./img/product-list/product-3.png" alt="shoe photo" class="margin-bottom-s">
                         <div class="recommend-card-content">
                             <h6 class="headings-h6 margin-bottom-xxs">VM001</h6>
                             <p class="label-md">NT$2,600</p>
                         </div>
                     </a></li>
-                    <li><a href="#" class="recommend-card">
+                    <li class="recommend-card"><a href="#">
                         <img src="./img/product-list/product-4.png" alt="shoe photo" class="margin-bottom-s">
                         <div class="recommend-card-content">
                             <h6 class="headings-h6 margin-bottom-xxs">VM001</h6>
                             <p class="label-md">NT$2,600</p>
                         </div>
                     </a></li>
-                    <li><a href="#" class="recommend-card">
+                    <li class="recommend-card"><a href="#">
                         <img src="./img/product-list/product-5.png" alt="shoe photo" class="margin-bottom-s">
                         <div class="recommend-card-content">
                             <h6 class="headings-h6 margin-bottom-xxs">VM001</h6>
@@ -195,9 +205,9 @@
     </div>
     <footer>
         <div class="container">
-            <div class="footer-nav d-flex jcsb margin-bottom-l align-center d-md-column align-mb-start spacing-mb-xs">
+            <div class="footer-nav d-flex jcsb margin-bottom-l align-center d-mb-column align-mb-start spacing-mb-xs">
                 <a href="index.html"><img src="./img/logo.svg" alt="logo link"></a>
-                <div class="footer-nav-link label-md d-flex spacing-2xl d-md-column spacing-mb-xxs px-mb-12">
+                <div class="footer-nav-link label-md d-flex spacing-2xl d-mb-column spacing-mb-xxs px-mb-12">
                     <a href="product-list.html">商品列表</a>
                     <a href="brand-story.html">品牌故事</a>
                 </div>

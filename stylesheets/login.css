@@ -433,15 +433,21 @@ button {
     padding: 0px 12px;
   }
   /* 在md以下，原本隱藏的要打開 */
-  .d-md-block {
+  .d-mb-block {
     display: block;
   }
   /* 在md以下，原本打開的要隱藏 */
-  .d-md-none {
+  .d-mb-none {
     display: none;
   }
-  .d-md-column {
+  .d-mb-column {
     flex-direction: column;
+  }
+  .d-mb-flex {
+    display: flex;
+  }
+  .flex-mb-nowrap {
+    flex-wrap: nowrap;
   }
   .align-mb-start {
     align-items: start;
@@ -456,7 +462,7 @@ button {
     width: 100%;
     height: auto;
   }
-  .col-md-12 {
+  .col-mb-12 {
     --span: 12;
     --gap-count: calc(var(--span) - 1);
     width: calc((100% - var(--gutter) * (var(--column) - 1)) / var(--column) * var(--span) + var(--gutter) * var(--gap-count));

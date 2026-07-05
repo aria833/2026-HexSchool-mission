@@ -433,15 +433,21 @@ button {
     padding: 0px 12px;
   }
   /* 在md以下，原本隱藏的要打開 */
-  .d-md-block {
+  .d-mb-block {
     display: block;
   }
   /* 在md以下，原本打開的要隱藏 */
-  .d-md-none {
+  .d-mb-none {
     display: none;
   }
-  .d-md-column {
+  .d-mb-column {
     flex-direction: column;
+  }
+  .d-mb-flex {
+    display: flex;
+  }
+  .flex-mb-nowrap {
+    flex-wrap: nowrap;
   }
   .align-mb-start {
     align-items: start;
@@ -456,7 +462,7 @@ button {
     width: 100%;
     height: auto;
   }
-  .col-md-12 {
+  .col-mb-12 {
     --span: 12;
     --gap-count: calc(var(--span) - 1);
     width: calc((100% - var(--gutter) * (var(--column) - 1)) / var(--column) * var(--span) + var(--gutter) * var(--gap-count));
@@ -507,6 +513,11 @@ body {
 main {
   padding: 64px 0;
 }
+@media (max-width: 576px) {
+  main {
+    padding: 0;
+  }
+}
 
 .main-img ul {
   row-gap: 8px;
@@ -515,6 +526,11 @@ main {
 }
 .main-img li {
   width: calc((100% - 8px) / 2);
+}
+@media (max-width: 576px) {
+  .main-img li {
+    width: 100%;
+  }
 }
 
 .main-detail-introduction-title-breadcrumb {
@@ -553,6 +569,11 @@ main {
   padding: 14px 0px;
   border: 1px solid #212529;
 }
+@media (max-width: 576px) {
+  .main-detail-specification-action button {
+    width: 100%;
+  }
+}
 .main-detail-specification-action .button-dark {
   background-color: #212529;
   color: #FFFFFF;
@@ -560,6 +581,12 @@ main {
 .main-detail-additional-material, .main-detail-additional-notice, .main-detail-additional-maintenance {
   padding: 12px 0;
   border-bottom: 1px solid #DEE2E6;
+}
+
+.heart-icon {
+  color: #212529;
+  font-size: 24px;
+  padding: 12px;
 }
 
 .sale-color {
@@ -573,11 +600,29 @@ main {
 .recommend-section {
   padding: 48px 0;
 }
+@media (max-width: 576px) {
+  .recommend-section {
+    padding: 40px 0;
+  }
+}
 
 .recommend-card {
   max-width: 306px;
 }
 
+@media (max-width: 576px) {
+  .recommend ul {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* 讓手機滑動時有滑順的滑鼠/手指跟隨感 */
+    scrollbar-width: none; /* 隱藏原生的滾動條*/
+  }
+  .recommend-card {
+    min-width: 300px;
+  }
+}
 .coupon {
   background-color: #E8FEC5;
 }
@@ -585,7 +630,7 @@ main {
   padding: 24px 0;
   margin-top: 48px;
 }
-@media (max-width: 543px) {
+@media (max-width: 576px) {
   .coupon-content {
     margin-top: 24px;
   }
@@ -595,7 +640,7 @@ main {
   background-color: #212529;
   padding: 12px 24px;
 }
-@media (max-width: 543px) {
+@media (max-width: 576px) {
   .coupon-content a {
     padding: 8px 16px;
   }
@@ -605,7 +650,7 @@ footer {
   background-color: #F8F9FA;
   padding: 64px 0;
 }
-@media (max-width: 543px) {
+@media (max-width: 576px) {
   footer {
     padding: 32px 0;
   }
