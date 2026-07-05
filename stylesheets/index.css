@@ -921,4 +921,16 @@ main {
 .inspiration-content-photo-area3-bottom img,
 .inspiration-content-photo-area2 img {
   width: calc((100% - 8px) / 2);
+}
+
+.inspiration-content-photo-mb ul {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* 讓手機滑動時有滑順的滑鼠/手指跟隨感 */
+  scrollbar-width: none; /* 隱藏原生的滾動條*/
+}
+.inspiration-content-photo-mb li {
+  max-width: 300px;
 }/*# sourceMappingURL=index.css.map */
