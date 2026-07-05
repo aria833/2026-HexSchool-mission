@@ -43,21 +43,54 @@
     }  
 }
 
+.header-mb-nav-link {
+    li {
+        width: 50%;
+        text-align: center;
+    }
+
+    a {
+        padding: 12px 0;
+    }
+}
+
+.bg-color-primary200 {
+    background-color: $primary200;
+}
+.bg-color-primary100 {
+    background-color: $primary100;
+}
+
 
 //hero區域
 .hero {
     background-image: url(../img/index/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
+    //overflow: hidden;
     max-width: 100%;
-    background-position: center;
+    background-position: center; 
+    position: relative;
+    min-height: 800px;
+
+    @media (max-width: 576px) {
+        background-image: url(../img/index/banner-sm.png);
+        min-height: 480px;
+    }
+
 }
 
 .hero-content {
-    padding: 288px 200px;
     color: $neutral0;
+    position: absolute;
+    left: 112px;
+    top: 50%;
+    transform: translate(-25%);
+}
 
+.hero-content-mb {
+    color: $neutral0;
+    padding: 155px 12px;
 }
 
 
@@ -73,6 +106,11 @@ main {
     padding: 64px 0;
 }
 
+.main-title {
+    h2 {
+        text-align: center;
+    }
+}
 
 
 
@@ -106,11 +144,37 @@ main {
 
 .hot {
     padding: 64px 0;
+
+    @media (max-width: 576px) {
+        padding: 40px 0;
+    }
 }
+
+
+@media (max-width: 576px) {
+    .hot-content-overall {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;   /* 讓手機滑動時有滑順的滑鼠/手指跟隨感 */
+        scrollbar-width: none; /* 隱藏原生的滾動條*/
+    }
+    .hot-content-list {
+        min-width: 351px;
+    }
+}
+
+
+
 
 .hot-content-list {
     position: relative;
 }
+
+
+
+
 
 .hot-content-tag {
     position: absolute;
@@ -134,6 +198,13 @@ main {
     background-size: cover;
     background-position: center;
     margin: 48px 0;
+
+    @media (max-width: 576px) {
+        background-image: url(../img/index/banner-co-branded-sm.png);
+        background-size: cover;
+        background-position: center;
+        margin: 24px 0;
+    }
 }
 
 
@@ -143,6 +214,10 @@ main {
     padding-bottom: 8px;
     color: $neutral0;
     text-align: center;
+
+    @media (max-width: 576px) {
+        padding: 64px 0;
+    }
     
 }
 
@@ -154,12 +229,22 @@ main {
     position: absolute;
     top: -24px;
     left: -80px;
+
+    @media (max-width: 576px) {
+        top: 32px;
+        left: -24px;
+    }
 }
 
 .decoration-1 {
     position: absolute;
     bottom: 32px;
     right: -38px;
+
+    @media (max-width: 576px) {
+        bottom: 40px;
+        right: -10px;
+    }
 }
 
 
@@ -199,8 +284,8 @@ main {
 }
 
 .series-card-content {
-    padding-top: 118px;
-    padding-bottom: 118px;
+    padding: 118px 0;
+    min-width: 306px;
 }
 
 .series-card-item1 {
@@ -244,6 +329,18 @@ main {
     color: $neutral0;
 
 }
+
+@media (max-width: 576px) {
+    .series-card-item1,
+    .series-card-item2,
+    .series-card-item3,
+    .series-card-item4 {
+        min-width: calc((100% - 8px) / 2);
+    }   
+}
+
+
+
 
 
 //靈感區域

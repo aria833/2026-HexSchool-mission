@@ -373,6 +373,11 @@ button {
 }
 
 @media (max-width: 543px) {
+  .display-mb-2 {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 700;
+  }
   .label-mb-sm {
     font-size: 0.875rem;
     line-height: 1.5;
@@ -408,6 +413,11 @@ button {
     line-height: 1.5;
     font-weight: 400;
   }
+  .paragraph-mb-md {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+  }
   .spacing-mb-0 {
     gap: 0px;
   }
@@ -437,6 +447,9 @@ button {
   }
   .margin-bottom-mb-xl {
     margin-bottom: 32px;
+  }
+  .margin-bottom-mb-2xl {
+    margin-bottom: 40px;
   }
   .px-mb-12 {
     padding: 0px 12px;

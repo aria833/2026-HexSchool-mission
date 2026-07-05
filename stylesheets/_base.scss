@@ -361,6 +361,13 @@ button {
 }
 
 @media (max-width: 543px) {
+    .display-mb-2 {
+        font-size: map-get($font-sizes, 'display2');
+        line-height: 1.2;
+        font-weight: $font-weight-bold;
+    }
+
+
     .label-mb-sm {
     font-size: map-get($font-sizes, 'label-sm');
     line-height: 1.5;
@@ -399,6 +406,12 @@ button {
 
     .paragraph-mb-sm {
         font-size: map-get($font-sizes, 'paragraph-sm');
+        line-height: 1.5;
+        font-weight: $font-weight-regular;
+    }
+
+    .paragraph-mb-md {
+        font-size: map-get($font-sizes, 'paragraph-md');
         line-height: 1.5;
         font-weight: $font-weight-regular;
     }
@@ -445,6 +458,11 @@ button {
     .margin-bottom-mb-xl {
     margin-bottom: 32px;
     }
+
+    .margin-bottom-mb-2xl {
+    margin-bottom: 40px;
+    }
+
 
     .px-mb-12 {
         padding: 0px 12px;

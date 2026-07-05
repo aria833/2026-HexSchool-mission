@@ -373,6 +373,11 @@ button {
 }
 
 @media (max-width: 543px) {
+  .display-mb-2 {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 700;
+  }
   .label-mb-sm {
     font-size: 0.875rem;
     line-height: 1.5;
@@ -408,6 +413,11 @@ button {
     line-height: 1.5;
     font-weight: 400;
   }
+  .paragraph-mb-md {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+  }
   .spacing-mb-0 {
     gap: 0px;
   }
@@ -437,6 +447,9 @@ button {
   }
   .margin-bottom-mb-xl {
     margin-bottom: 32px;
+  }
+  .margin-bottom-mb-2xl {
+    margin-bottom: 40px;
   }
   .px-mb-12 {
     padding: 0px 12px;
@@ -519,18 +532,49 @@ body {
   color: #57A203;
 }
 
+.header-mb-nav-link li {
+  width: 50%;
+  text-align: center;
+}
+.header-mb-nav-link a {
+  padding: 12px 0;
+}
+
+.bg-color-primary200 {
+  background-color: #E8FEC5;
+}
+
+.bg-color-primary100 {
+  background-color: #F5FEE7;
+}
+
 .hero {
   background-image: url(../img/index/banner.png);
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
   max-width: 100%;
   background-position: center;
+  position: relative;
+  min-height: 800px;
+}
+@media (max-width: 576px) {
+  .hero {
+    background-image: url(../img/index/banner-sm.png);
+    min-height: 480px;
+  }
 }
 
 .hero-content {
-  padding: 288px 200px;
   color: #FFFFFF;
+  position: absolute;
+  left: 112px;
+  top: 50%;
+  transform: translate(-25%);
+}
+
+.hero-content-mb {
+  color: #FFFFFF;
+  padding: 155px 12px;
 }
 
 .button-buy {
@@ -541,6 +585,10 @@ body {
 
 main {
   padding: 64px 0;
+}
+
+.main-title h2 {
+  text-align: center;
 }
 
 .main-content-card {
@@ -569,7 +617,25 @@ main {
 .hot {
   padding: 64px 0;
 }
+@media (max-width: 576px) {
+  .hot {
+    padding: 40px 0;
+  }
+}
 
+@media (max-width: 576px) {
+  .hot-content-overall {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* 讓手機滑動時有滑順的滑鼠/手指跟隨感 */
+    scrollbar-width: none; /* 隱藏原生的滾動條*/
+  }
+  .hot-content-list {
+    min-width: 351px;
+  }
+}
 .hot-content-list {
   position: relative;
 }
@@ -593,12 +659,25 @@ main {
   background-position: center;
   margin: 48px 0;
 }
+@media (max-width: 576px) {
+  .collaboration {
+    background-image: url(../img/index/banner-co-branded-sm.png);
+    background-size: cover;
+    background-position: center;
+    margin: 24px 0;
+  }
+}
 
 .collaboration-content {
   padding-top: 100px;
   padding-bottom: 8px;
   color: #FFFFFF;
   text-align: center;
+}
+@media (max-width: 576px) {
+  .collaboration-content {
+    padding: 64px 0;
+  }
 }
 
 .collaboration-content-campaign-word {
@@ -610,11 +689,23 @@ main {
   top: -24px;
   left: -80px;
 }
+@media (max-width: 576px) {
+  .decoration-2 {
+    top: 32px;
+    left: -24px;
+  }
+}
 
 .decoration-1 {
   position: absolute;
   bottom: 32px;
   right: -38px;
+}
+@media (max-width: 576px) {
+  .decoration-1 {
+    bottom: 40px;
+    right: -10px;
+  }
 }
 
 .collaboration-content-campaign-word-title-main-kevin h1 {
@@ -648,8 +739,8 @@ main {
 }
 
 .series-card-content {
-  padding-top: 118px;
-  padding-bottom: 118px;
+  padding: 118px 0;
+  min-width: 306px;
 }
 
 .series-card-item1 {
@@ -684,6 +775,14 @@ main {
   color: #FFFFFF;
 }
 
+@media (max-width: 576px) {
+  .series-card-item1,
+  .series-card-item2,
+  .series-card-item3,
+  .series-card-item4 {
+    min-width: calc((100% - 8px) / 2);
+  }
+}
 .inspiration-content {
   margin: 64px 0;
 }
