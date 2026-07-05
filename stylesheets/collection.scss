@@ -8,10 +8,11 @@
 
 /* 可以先將所有物件加上邊框，來判斷範圍
     border會佔據距離，outline不會
-*/
+
 *,*:before,*:after{
 	outline: 1px solid red;
 }
+*/
 
 
 //header 區域
@@ -46,7 +47,11 @@
 
 //main區域
 main {
-    padding: 24px 0;
+    padding: 64px 0;
+
+    @media (max-width: 543px) {
+        padding: 24px 0;
+    }
 }
 
 
@@ -61,7 +66,14 @@ main {
         color: $primary500;
         background-color: $primary200;
         border-radius: 1000px;
+
+        @media (max-width) {
+            font-size: 20px;
+            padding: 6px;
+        }
     }
+
+    
 }
 
 .main-officeHour {

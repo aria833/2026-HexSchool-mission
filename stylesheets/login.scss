@@ -43,18 +43,13 @@
 }
 
 
-
-//圖片區域
-.main-section {
-    align-items: stretch;
+//註冊登入區塊
+.main-section-input {
+     background-image: url(../img/login/login-bg.png);
 }
 
-
-//註冊登入區塊
-
-.main-section-input {
+.main-section-input-content {
     padding: 120px 80px;
-    background-image: url(../img/login/login-bg.png);
 }
 
 .main-section-info {
@@ -90,7 +85,6 @@
         font-size: 40px;
     }
 }
-
 
 
 

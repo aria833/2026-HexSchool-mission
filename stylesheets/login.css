@@ -362,7 +362,7 @@ button {
   margin: 0 auto;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 543px) {
   .label-mb-sm {
     font-size: 0.875rem;
     line-height: 1.5;
@@ -393,6 +393,11 @@ button {
     line-height: 1.2;
     font-weight: 700;
   }
+  .paragraph-mb-sm {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    font-weight: 400;
+  }
   .spacing-mb-xxs {
     gap: 4px;
   }
@@ -410,6 +415,9 @@ button {
   }
   .margin-bottom-mb-m {
     margin-bottom: 16px;
+  }
+  .spacing-mb-l {
+    gap: 24px;
   }
   .margin-bottom-mb-xl {
     margin-bottom: 32px;
@@ -489,13 +497,12 @@ body {
   color: #57A203;
 }
 
-.main-section {
-  align-items: stretch;
+.main-section-input {
+  background-image: url(../img/login/login-bg.png);
 }
 
-.main-section-input {
+.main-section-input-content {
   padding: 120px 80px;
-  background-image: url(../img/login/login-bg.png);
 }
 
 .main-section-info h3 {

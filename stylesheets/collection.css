@@ -362,7 +362,7 @@ button {
   margin: 0 auto;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 543px) {
   .label-mb-sm {
     font-size: 0.875rem;
     line-height: 1.5;
@@ -393,6 +393,11 @@ button {
     line-height: 1.2;
     font-weight: 700;
   }
+  .paragraph-mb-sm {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    font-weight: 400;
+  }
   .spacing-mb-xxs {
     gap: 4px;
   }
@@ -410,6 +415,9 @@ button {
   }
   .margin-bottom-mb-m {
     margin-bottom: 16px;
+  }
+  .spacing-mb-l {
+    gap: 24px;
   }
   .margin-bottom-mb-xl {
     margin-bottom: 32px;
@@ -464,11 +472,11 @@ body {
 
 /* 可以先將所有物件加上邊框，來判斷範圍
     border會佔據距離，outline不會
-*/
-*, *:before, *:after {
-  outline: 1px solid red;
-}
 
+*,*:before,*:after{
+	outline: 1px solid red;
+}
+*/
 .header-area {
   padding: 16px 0;
 }
@@ -490,7 +498,12 @@ body {
 }
 
 main {
-  padding: 24px 0;
+  padding: 64px 0;
+}
+@media (max-width: 543px) {
+  main {
+    padding: 24px 0;
+  }
 }
 
 .main-items-card-content {
@@ -503,6 +516,12 @@ main {
   color: #477A11;
   background-color: #E8FEC5;
   border-radius: 1000px;
+}
+@media (max-width) {
+  .main-title i {
+    font-size: 20px;
+    padding: 6px;
+  }
 }
 
 .main-officeHour {

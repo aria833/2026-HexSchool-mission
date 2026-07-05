@@ -393,6 +393,11 @@ button {
     line-height: 1.2;
     font-weight: 700;
   }
+  .paragraph-mb-sm {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    font-weight: 400;
+  }
   .spacing-mb-xxs {
     gap: 4px;
   }
@@ -410,6 +415,9 @@ button {
   }
   .margin-bottom-mb-m {
     margin-bottom: 16px;
+  }
+  .spacing-mb-l {
+    gap: 24px;
   }
   .margin-bottom-mb-xl {
     margin-bottom: 32px;

@@ -362,7 +362,7 @@ button {
   margin: 0 auto;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 543px) {
   .label-mb-sm {
     font-size: 0.875rem;
     line-height: 1.5;
@@ -393,6 +393,11 @@ button {
     line-height: 1.2;
     font-weight: 700;
   }
+  .paragraph-mb-sm {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    font-weight: 400;
+  }
   .spacing-mb-xxs {
     gap: 4px;
   }
@@ -410,6 +415,9 @@ button {
   }
   .margin-bottom-mb-m {
     margin-bottom: 16px;
+  }
+  .spacing-mb-l {
+    gap: 24px;
   }
   .margin-bottom-mb-xl {
     margin-bottom: 32px;
@@ -570,7 +578,7 @@ main {
   padding: 24px 0;
   margin-top: 48px;
 }
-@media (width: 375px) {
+@media (max-width: 543px) {
   .coupon-content {
     margin-top: 24px;
   }
@@ -580,7 +588,7 @@ main {
   background-color: #212529;
   padding: 12px 24px;
 }
-@media (width: 375px) {
+@media (max-width: 543px) {
   .coupon-content a {
     padding: 8px 16px;
   }
@@ -590,7 +598,7 @@ footer {
   background-color: #F8F9FA;
   padding: 64px 0;
 }
-@media (width: 375px) {
+@media (max-width: 543px) {
   footer {
     padding: 32px 0;
   }

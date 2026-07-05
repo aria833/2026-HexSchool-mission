@@ -348,7 +348,7 @@ button {
     margin: 0 auto;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 543px) {
     .label-mb-sm {
     font-size: map-get($font-sizes, 'label-sm');
     line-height: 1.5;
@@ -385,6 +385,11 @@ button {
         font-weight: $font-weight-bold;
     }
 
+    .paragraph-mb-sm {
+        font-size: map-get($font-sizes, 'paragraph-sm');
+        line-height: 1.5;
+        font-weight: $font-weight-regular;
+    }
 
     //間隔
     .spacing-mb-xxs {
@@ -409,6 +414,10 @@ button {
 
     .margin-bottom-mb-m {
     margin-bottom: 16px;
+    }
+
+    .spacing-mb-l {
+    gap: 24px;
     }
 
     .margin-bottom-mb-xl {
