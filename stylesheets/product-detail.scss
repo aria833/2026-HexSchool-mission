@@ -115,6 +115,29 @@ main {
     }
 }
 
+.cta-collection:hover {
+    background-color: $primary100;
+}
+
+.cta-collection:active {
+    background-color: $primary200;
+}
+
+.button-dark:hover {
+    background-color: $neutral700;
+}
+
+.button-dark:active {
+    background-color: $neutral800;
+}
+
+
+.main-detail-specification-choice-size-option {
+    button:hover {
+        border: 1px solid $neutral600;
+    }
+}
+
 .heart-icon {
     color: $neutral900;
     font-size: 24px;

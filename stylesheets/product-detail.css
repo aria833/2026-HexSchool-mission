@@ -511,6 +511,30 @@ body {
   width: 100%;
 }
 
+.main-product-section-list-card,
+.recommend-card,
+.hover-selected {
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+.main-product-section-list-card::after,
+.recommend-card::after,
+.hover-selected::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+.main-product-section-list-card:hover::after,
+.recommend-card:hover::after,
+.hover-selected:hover::after {
+  opacity: 1;
+}
+
 .header-area {
   padding: 16px 0;
 }
@@ -663,6 +687,26 @@ main {
 .main-detail-additional-material, .main-detail-additional-notice, .main-detail-additional-maintenance {
   padding: 12px 0;
   border-bottom: 1px solid #DEE2E6;
+}
+
+.cta-collection:hover {
+  background-color: #F5FEE7;
+}
+
+.cta-collection:active {
+  background-color: #E8FEC5;
+}
+
+.button-dark:hover {
+  background-color: #495057;
+}
+
+.button-dark:active {
+  background-color: #343A40;
+}
+
+.main-detail-specification-choice-size-option button:hover {
+  border: 1px solid #6C757D;
 }
 
 .heart-icon {
