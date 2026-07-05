@@ -635,11 +635,11 @@ footer {
 
 /* 可以先將所有物件加上邊框，來判斷範圍
     border會佔據距離，outline不會
-*/
-*, *:before, *:after {
-  outline: 1px solid red;
-}
 
+*,*:before,*:after{
+	outline: 1px solid red;
+}
+*/
 .bg-color-primary200 {
   background-color: #E8FEC5;
 }
