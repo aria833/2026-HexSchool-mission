@@ -651,14 +651,31 @@ footer {
   background-color: #E8FEC5;
 }
 
+.bg-color-primary200:hover {
+  background-color: #C0FA73;
+}
+
+.bg-color-primary200:active {
+  background-color: #57A203;
+}
+
 .bg-color-primary100 {
   background-color: #F5FEE7;
+}
+
+.bg-color-primary100:hover {
+  background-color: #C0FA73;
+}
+
+.bg-color-primary100:active {
+  background-color: #57A203;
 }
 
 .hero {
   background-image: url(../img/index/banner.png);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
   max-width: 100%;
   background-position: center;
   position: relative;
@@ -790,6 +807,8 @@ main {
   padding-bottom: 8px;
   color: #FFFFFF;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 @media (max-width: 576px) {
   .collaboration-content {
@@ -797,31 +816,27 @@ main {
   }
 }
 
-.collaboration-content-campaign-word {
-  position: relative;
-}
-
 .decoration-2 {
   position: absolute;
-  top: -24px;
-  left: -80px;
+  top: 68px;
+  left: 20%;
 }
 @media (max-width: 576px) {
   .decoration-2 {
-    top: -24px;
-    left: -36px;
+    top: 32px;
+    left: -10%;
   }
 }
 
 .decoration-1 {
   position: absolute;
-  bottom: 32px;
-  right: -38px;
+  bottom: 132px;
+  right: 20%;
 }
 @media (max-width: 576px) {
   .decoration-1 {
-    bottom: 24px;
-    right: -36px;
+    bottom: 104px;
+    right: -10%;
   }
 }
 
@@ -910,6 +925,11 @@ main {
 .inspiration-content {
   margin: 64px 0;
 }
+@media (max-width: 576px) {
+  .inspiration-content {
+    margin: 40px 0;
+  }
+}
 
 .inspiration-content-photo-area1,
 .inspiration-content-photo-area2,
@@ -923,14 +943,21 @@ main {
   width: calc((100% - 8px) / 2);
 }
 
-.inspiration-content-photo-mb ul {
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: stretch;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch; /* 讓手機滑動時有滑順的滑鼠/手指跟隨感 */
-  scrollbar-width: none; /* 隱藏原生的滾動條*/
-}
-.inspiration-content-photo-mb li {
-  max-width: 300px;
+@media (max-width: 576px) {
+  .inspiration-content-photo-mb {
+    overflow: hidden;
+  }
+  .inspiration-content-photo-mb ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* 讓手機滑動時有滑順的滑鼠/手指跟隨感 */
+    scrollbar-width: none; /* 隱藏原生的滾動條*/
+  }
+  .inspiration-content-photo-mb li {
+    max-width: 300px;
+    flex-shrink: 0;
+  }
 }/*# sourceMappingURL=index.css.map */

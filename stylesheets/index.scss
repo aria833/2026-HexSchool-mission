@@ -18,8 +18,26 @@
 .bg-color-primary200 {
     background-color: $primary200;
 }
+
+.bg-color-primary200:hover {
+    background-color: $primary300;
+}
+
+.bg-color-primary200:active {
+    background-color: $primary400;
+}
+
+
 .bg-color-primary100 {
     background-color: $primary100;
+}
+
+.bg-color-primary100:hover {
+    background-color: $primary300;
+}
+
+.bg-color-primary100:active {
+    background-color: $primary400;
 }
 
 
@@ -28,7 +46,7 @@
     background-image: url(../img/index/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
-    //overflow: hidden;
+    overflow: hidden;
     max-width: 100%;
     background-position: center; 
     position: relative;
@@ -184,6 +202,8 @@ main {
     padding-bottom: 8px;
     color: $neutral0;
     text-align: center;
+    position: relative;
+    overflow: hidden;
 
     @media (max-width: 576px) {
         padding: 64px 0;
@@ -191,29 +211,26 @@ main {
     
 }
 
-.collaboration-content-campaign-word {
-    position: relative;
-}
 
 .decoration-2 {
     position: absolute;
-    top: -24px;
-    left: -80px;
+    top: 68px;
+    left: 20%;
 
     @media (max-width: 576px) {
-        top: -24px;
-        left: -36px;
+        top: 32px;
+        left: -10%;
     }
 }
 
 .decoration-1 {
     position: absolute;
-    bottom: 32px;
-    right: -38px;
+    bottom: 132px;
+    right: 20%;
 
     @media (max-width: 576px) {
-        bottom: 24px;
-        right: -36px;
+        bottom: 104px;
+        right: -10%;
     }
 }
 
@@ -317,6 +334,10 @@ main {
 //靈感區域
 .inspiration-content {
     margin: 64px 0;
+
+    @media (max-width: 576px) {
+        margin: 40px 0;
+    }
 }
 
 .inspiration-content-photo-area1,
@@ -333,16 +354,24 @@ main {
     }
 }
 
-.inspiration-content-photo-mb {
-    ul {
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: stretch;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;   /* 讓手機滑動時有滑順的滑鼠/手指跟隨感 */
-        scrollbar-width: none; /* 隱藏原生的滾動條*/
-    }
-    li {
-        max-width: 300px;
-    }
+@media (max-width: 576px) {
+    .inspiration-content-photo-mb {
+        overflow: hidden;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: stretch;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;   /* 讓手機滑動時有滑順的滑鼠/手指跟隨感 */
+            scrollbar-width: none; /* 隱藏原生的滾動條*/
+
+            
+        }
+        li {
+            max-width: 300px;
+            flex-shrink: 0;
+        }   
+    }   
 }
